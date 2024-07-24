@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Javascript Form</title>
+        <link rel="icon" type="image/x-icon" href="assets">
+        <link rel="stylesheet" href="assets/css/js form .css">
+        <script src="assets/js/js form .js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="">
+        <div>
+        <div class="container bg martop">
+        <h4 class="text-center mt-2">Javascript Form</h4>
+        <form name="jsform">
+            <div class="row">
+            <div class="col-sm-6">
+            <label>First Name: </label>
+            <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter a First Name" required>
+            <div class="color" id="fnameerr"></div>
+            <label>Email Address: </label>
+            <input type="email" name="eid" id="eid"  class="form-control" placeholder="Enter email" required >
+            <div class="color" id="eiderr"></div>
+            </div>
+            <div class="col-sm-6">
+            <label>Last Name: </label>
+            <input type="text" name="surname" id="surname"  class="form-control" placeholder="Enter a Last Name" required>
+            <div class="color" id="surnameerr"></div>
+            <label>Contact No:</label> 
+            <input type="number" name="digits" id="digits"  maxlength="10"  class="form-control" placeholder="Enter a Contact Number" required>
+            <div class="color" id="conerr"></div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6 mt-1">
+            <label> Qualification: </label> 
+               
+                <select name="education" id="education" class="form-control" >
+                  <option selected="selected" disabled="disabled">Select Qualification </option>
+                  <option>BscIT</option>
+                  <option>BscCS</option>
+                  <option>MscIT</option>
+                  <option>MscCS</option>
+                </select>
+                <div class="color" id="selecterr"></div>
+            </div>
+            </div>
+            <div class="row">
+            <div  class="col-sm-6 mt-3">
+                <label>Gender: </label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label">Female</label>
+                  </div>
+                  <div class="color" id="wrong"></div>              
+            </div>
+            
+            <div class="mt-3 pl-3">
+            <label>Hobbies : </label>   
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="hobbies" value="Travelling">
+                <label class="form-check-label" for="Travelling">
+                    Travelling
+                </label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="hobbies"  value=" Reading">
+                <label class="form-check-label" for="Reading">
+                    Reading
+                </label>
+            </div> 
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="hobbies" value="Trekking">
+                <label class="form-check-label" for="Trekking">
+                    Trekking
+                </label>
+            </div>
+            <div class="color" id="wrong1"></div>
+            </div>
+            </div>
+            
+            <div class="mt-3">
+            <label class="position">Comment box:</label>
+            <textarea id="tarea" name="tarea" placeholder="Enter Your Review Here......" rows="4" cols="56"></textarea>
+            </div>
+            <div class="color" id="commenterr"></div>
+            <div class="text-center">
+            <button type="button" id="btnsummit" class=" btn submit-btn mb-2" onclick="final()"><b>Submit</b></button>
+            </div>
+            
+            <p id="one"></p>
+            <p id="two"></p> 
+            <p id="three"></p>
+            <p id="four"></p>
+            <p id="five"></p>
+            <p id="output"></p>   
+            <p id="output1"></p>   
+            <p id="six"></p>
+            <p id="seven"></p> 
+              
+        </form>
+        </div>
+        </div>
+        </section>
+    </body>
+</html>

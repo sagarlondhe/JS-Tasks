@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Todo list</title>
+    </head>
+    <body>
+        <div>
+            <h3>TODO LIST</h3>
+            <div>
+                <input type="text" name="todo" id="todo" placeholder="add task here..">
+                <button type="button" id="addbtn" onclick="add()">Add Task</button>
+                <p id="showtd"></p>
+            </div>
+        </div>
+    </body>
+    <script>
+        function add(){
+        // result
+        var add=document.getElementById("todo").value;
+        var node= document.createElement("p");
+        var textnode = document.createTextNode(add); 
+        node.appendChild(textnode);
+        document.getElementById("showtd").appendChild(node);
+        
+        //output
+        var removeitem=document.createElement("input");
+        removeitem.setAttribute("type","button");
+        removeitem.setAttribute("value","delete");
+        
+        removeitem.addEventListener("click",remove);
+        function remove(){
+        node.parentNode.removeChild(node);
+        };
+        
+        node.appendChild(removeitem);
+        }
+        
+      
+    </script>
+
+</html>
+
+
+
+
+
+    

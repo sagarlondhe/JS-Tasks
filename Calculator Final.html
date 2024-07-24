@@ -1,0 +1,56 @@
+<html> 
+<head>
+<title>Simple Calculator</title>
+</head>
+<body>
+
+<h3>Simple Calculator</h3>
+<form>
+    <label for="first number">First Number: </label> <br>
+    <input type="text" id="fNumber" placeholder="Enter a First Number" /><br><br>
+    <label for="Second number">Second Number: </label> <br>
+    <input type="text" id="sNumber" placeholder="Enter a Second Number"  /><br><br>
+
+  
+    <button type="button" onClick="add()">Addition</button>
+    <button type="button" onClick="subtract()">Subtraction</button>
+    <button type="button" onClick="multiply()">Multiplication</button>
+    <button type="button" onClick="div()">Division</button>
+
+    </form>
+    <p>The Output is :
+    <span id="output"></span>    
+    </p>
+ 
+    <script>
+    function add()
+    {
+        num1 = document.getElementById("fNumber").value;
+        num2 = document.getElementById("sNumber").value;
+        document.getElementById("output").innerHTML = parseInt(num1) + parseInt(num2);
+    }
+    
+    function subtract()
+    {
+        num1 = document.getElementById("fNumber").value;
+        num2 = document.getElementById("sNumber").value;
+        document.getElementById("output").innerHTML = num1 - num2;
+    }
+
+    function multiply()
+    {
+        num1 = document.getElementById("fNumber").value;
+        num2 = document.getElementById("sNumber").value;
+        document.getElementById("output").innerHTML = num1 * num2;
+    }
+
+    function div() 
+    { 
+        num1 = document.getElementById("fNumber").value;
+        num2 = document.getElementById("sNumber").value;
+        document.getElementById("output").innerHTML = num1 / num2;
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>switch case</title>
+</head>
+<body>
+<h2>Simple Calculator using Switch Case</h2>    
+
+<form>
+<label for="first number">First Number: </label> <br>
+<input type="text" placeholder="Enter first number"id="fnum" /><br><br>
+<label for="Second number">Second Number: </label> <br>
+<input type="text" placeholder="Enter second number" id="snum" /><br><br> 
+</form>
+
+
+<select id="op">
+    <option>select operator</option>
+    <option>Addition</option>
+    <option>Subtraction</option>
+    <option>Multiplication</option>
+    <option>Division</option>
+</select>
+<br><br>
+
+<button onclick="calculator()">Calculate</button><br><br>
+
+<p>The Output is :
+<span id="output"></span>    
+</p>
+
+<script>
+function calculator() {
+    var x = document.getElementById('fnum').value;
+    var y = document.getElementById('snum').value;
+    var op = document.getElementById('op').value;
+    switch(op) {
+        case 'Addition':
+            result = parseInt(x)+parseInt(y);
+            document.getElementById('output').innerHTML = result;
+            break;
+            
+        case 'Subtraction':
+            result = (x)-(y);
+            document.getElementById('output').innerHTML = result;
+            break;
+            
+        case 'Multiplication':
+            result = (x)*(y);
+            document.getElementById('output').innerHTML = result;
+            break;
+            
+        case 'Division':
+            result = (x)/(y);
+            document.getElementById('output').innerHTML = result;
+            break;
+            
+        default:
+            document.getElementById('output').innerHTML = result;
+            break;
+    }
+}
+</script>
+</body>
+</html>
